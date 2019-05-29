@@ -64,7 +64,7 @@ label intro:
     if sex=="f":
         mog "Bienvenue à la Cosy Académie, gamine. Ne t'inquiète pas, on n'est pas tous aussi bourrus que lui !"
         innerpov "Je suis presque sûre qu'on a le même âge, mais le fait qu'il m'appelle gamine ne me déplaît pas particulièrement."
-        pov "Aaaah, merci... Je tâcherai de me faire plus discrete, désolée !"
+        pov "Aaaah, merci... Je tâcherai de me faire plus discrète, désolée !"
         mog "Mais non enfin ! Si tu es ici, c'est que tu as ta place. Aucune raison de se faire discrète !"
     else:
         mog "Bienvenue à la Cosy Académie, gamin. Ne t'inquiète pas, on n'est pas tous aussi bourrus que lui !"
@@ -102,7 +102,7 @@ label intro:
 
     pov "Ouf."
     pov "Ok, ça commence fort."
-    pov "Même de dos ils sont impressionants..."
+    pov "Même de dos ils sont impressionnants..."
     pov "Aller, ça va le faire ! On y va !"
 
     window hide
