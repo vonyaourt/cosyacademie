@@ -20,7 +20,7 @@
 
     noName "*Knock knock knock*"
 
-    innerpov "Wow… La porte s'est ouverte toute seule... Ça a l'air desert… Et pourtant plutôt cosy !"
+    innerpov "Wow… La porte s'est ouverte toute seule... Ça a l'air désert… Et pourtant plutôt cosy !"
 
     scene classroom night with fade
 
@@ -135,7 +135,7 @@
 
     show Mathilde Standard Colere Rougit
 
-    mat "Roh ca va hein ! Je me suis trompée UNE fois !"
+    mat "Roh ça va hein ! Je me suis trompée UNE fois !"
 
     med "Ahahah !"
 
@@ -241,7 +241,7 @@
 
     mic "ON S'EST FAIT LAMINER !"
 
-    pov "Je vous avait dit que je savais pas mentir !"
+    pov "Je vous avais dit que je savais pas mentir !"
 
     show Mickey PoseDroite Colere
 
@@ -274,7 +274,7 @@
 
     mat "Huhuhu… Comme tu n'étais pas au courant, je te donnerai un truc simple… Mais vous m'sieur Max, c'est tarif !"
 
-    mat "J'veux vous voir a l'entraînement des cheerleaders la semaine prochaine ! Et en costume je vous prie !"
+    mat "J'veux vous voir à l'entraînement des cheerleaders la semaine prochaine ! Et en costume je vous prie !"
 
     show Mickey BrasCroises Triste
 
