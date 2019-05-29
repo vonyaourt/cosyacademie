@@ -1,5 +1,5 @@
 label Premiercours:
-    play music skyward
+    play music ashes
     scene classroom with fade
 
     inc "Allez allez, un peu de silence !"
@@ -39,7 +39,7 @@ label Premiercours:
 
     show Dieuvomi BrasCroises Triste
 
-    innerpov "Celui là par exemple, dégage une aura de malfrat."
+    innerpov "Celui-là par exemple, dégage une aura de malfrat."
     innerpov "Mais il étudie ici... Je ne pense pas qu'il soit si méchant que ça !"
     innerpov "Ça ne me ressemble pas de juger sur les apparences pourtant..."
     innerpov "Bref."
@@ -56,7 +56,7 @@ label Premiercours:
     with shortflash
     show Medoc PoseGauche Degoute with shortflash
 
-    noName "BLAM!!"
+    noName "BLAM!!" with hpunch
     med "Bon t'as pas bientôt fini avec ses histoires de 'Je n'ai pas ma place ici, vous valez mieux que moi' ou je sais pas quoi !?"
     med "T'as pas écouté ce que t'a dit Moguri ou quoi ?!"
 
@@ -163,7 +163,7 @@ label Premiercours:
     show Metalice PoseSpeciale Cligne
     met "Dieuvomi ? C'est pas VRAIMENT un voyou, c'est juste un style qu'il se donne."
     show Metalice Standard Sourire
-    met "Il ne te fera jamais de mal, à moins que tu sois un apocope de bandage pneumatique."
+    met "Il ne te fera jamais de mal, à moins que tu sois une apocope de bandage pneumatique."
     pov "Un quoi ?"
     show Metalice Standard Degoute
     met "Un pneu. Il a un souci avec ça je crois, il aime beaucoup les crever."
@@ -212,7 +212,7 @@ label Premiercours:
 
             pov "Ce n'est pas mon preux chevalier... Je voulais juste le remercier, c'est tout. C'était très sympathique ce qu'il a fait..."
             show Metalice Standard Cligne
-            met "Heroïque presque ?"
+            met "Héroïque presque ?"
 
             pov "Oh, ça suffit hein !!"
             show Metalice Standard Sourire

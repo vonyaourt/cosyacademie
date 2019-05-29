@@ -165,9 +165,9 @@ screen say_von(who, what):
 
         text what:
           id "what" xanchor 1.0 xalign 0.78
-          font "Squealer.ttf"
+          font "Enchanted Land.otf"
           text_align 1.0
-          size 32
+          size 46
 
 
 
@@ -351,12 +351,15 @@ style choice_button_text is default:
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
-    zorder 100
+    zorder 10000
 
-    if quick_menu:
-
+    if quick_menu :
+        window:
+            id "quick"
+            background "gui/quick_menu.png"
         hbox:
             style_prefix "quick"
+
 
             xalign 0.5
             yalign 1.0
@@ -364,7 +367,6 @@ screen quick_menu():
             textbutton _("Retour") action Rollback()
             textbutton _("Historique") action ShowMenu('history')
             textbutton _("Avance rapide") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Sauvegarde") action ShowMenu('save')
             textbutton _("Sauvegarde R.") action QuickSave()
             textbutton _("Chargement R.") action QuickLoad()
@@ -670,7 +672,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
             python:
-                credits = ('Personnages', 'din'), ('Backgrounds', 'Ze_PilOt'), ('Les Cheerleaders', 'Ecrit par Clornide'),  ('Le club Otaku', 'Ecrit par din'), ('Le club Rando', 'Ecrit par Von Yaourt'), ('Le club Comédie', 'Ecrit par Dieuvomi'), ('Le club de Bagarre', 'Ecrit par KupowY'), ('Le club des Jeux', 'Ecrit par Clornide'), ('Le conseil des élèves', 'Ecrit par Decade'), ('Le club Tech', 'Ecrit par Decade'), ('Le Cosy Culture Club', 'Ecrit par Ze_PilOt'), ('Relecture', 'Dieuvomi'), ('Relecture', 'Von Yaourt'), ('Mise en scène', 'Ze_PilOt'), ('Musique (Creative Common)', 'Scott Buckley'), ('Musique (Creative Common)', 'Myuu')
+                credits = ('Personnages', 'din'), ('Backgrounds', 'Ze_PilOt'), ('Les Cheerleaders', 'Ecrit par Clornide'), ('Le club Comédie', 'Ecrit par Dieuvomi'),('Le club Comédie', 'Spectacle de Foulk : Twitter @Foulk32'), ('Le club Tech', 'Ecrit par Decade'), ('Le club Otaku', 'Ecrit par din'), ('Le club des Jeux', 'Ecrit par Clornide'), ('Le club Rando', 'Ecrit par Von Yaourt'), ('Le club de Bagarre', 'Ecrit par KupowY'), ('Le conseil des élèves', 'Ecrit par Decade'), ('Le Cosy Culture Club', 'Ecrit par Ze_PilOt'), ('Le Verdict', 'Ecrit par Clornide'), ('Relecture et corrections', 'KupowY'), ('Relecture et corrections', 'Samaël'),('Relecture et corrections', 'Von Yaourt'), ('Programmation', 'Ze_PilOt'), ('Mise en scène', 'Ze_PilOt'), ('Musique (Creative Common)', 'Scott Buckley'), ('Musique (Creative Common)', 'Myuu'), ('Musique (Creative Common)', 'KODOMOi')
                 
                 credits_s = ""
                 c1 = ''
@@ -862,18 +864,11 @@ screen preferences():
                         textbutton _("Ultra") action SetField(persistent, "ultra_quality", True)
 
                 vbox:
-                    style_prefix "radio"
-                    label _("Rembobinage")
-                    textbutton _("Désactivé") action Preference("rollback side", "disable")
-                    textbutton _("Gauche") action Preference("rollback side", "left")
-                    textbutton _("Droite") action Preference("rollback side", "right")
-
-                vbox:
                     style_prefix "check"
                     label _("Avance rapide")
-                    textbutton _("Texte non lu") action Preference("skip", "toggle")
-                    textbutton _("Après les choix") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                    textbutton _("Stop si non lu") action InvertSelected(Preference("skip", "toggle"))
+                    
+
 
                 ## Des boites vbox additionnelles de type "radio_pref" ou
                 ## "check_pref" peuvent être ajoutées ici pour ajouter des

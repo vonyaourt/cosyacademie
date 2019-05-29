@@ -47,19 +47,24 @@ label club_comedie:
     else:
         dieuv "Ahahahah t'es curieuse, c'est marrant et je te comprends."
     
-    dieuv "Je peux rien te dire, imagine un peu que les pouvoirs en place tombent sur ce brulôt d'humour, comment on serait pas dans la merde."
+    dieuv "Je peux rien te dire, imagine un peu que les pouvoirs en place tombent sur ce brûlot d'humour, comment on serait pas dans la merde."
     show Dieuvomi Standard Sourire Rougit
     dieuv "Pour l'instant je peux dévoiler que le titre : « Foulk'on Rigole »"
     pov "Mais... c'est nul."
     show Dieuvomi Standard Colere at bigzoom with vpunch 
     dieuv "JE SAIS QUE C'EST NUL !"
     show Dieuvomi PoseDroite Colere
-    dieuv "C'est pas ce que je voulais de toute façon, j'avais « C'est quoi le problème avec la bouffe dans les avions », un spectacle qui crève les peuneus de l'esprit."
+    dieuv "C'est pas ce que je voulais de toute façon, j'avais « C'est quoi le problème avec la bouffe dans les avions ?», un spectacle qui crève les peuneus de l'esprit."
     show Dieuvomi BrasCroises Colere at normalzoom
     dieuv "Mais ouais, Foulk voulait faire le sien d'abord. J'y peux quoi ? Hein tu me cherches en fait ?"
     pov "Non... je.."
     show Dieuvomi Standard Sourire
-    dieuv "AHAHAHAHAH je déconne, tu vois, tu t'es laissé piéger par les pièges de mon humour."
+   
+    if sex=="m":
+        dieuv "AHAHAHAHAH je déconne, tu vois, tu t'es laissé piéger par les pièges de mon humour."
+    else:
+        dieuv "AHAHAHAHAH je déconne, tu vois, tu t'es laissée piéger par les pièges de mon humour."
+    
     dieuv "T'as gambergé un peu le délire ? Tu crois que je vais te casser la gueule à coups de chaînes et en fait c'était pour déconner. La base de l'humour."
     pov "Ahahah..."
     innerpov "C'est gênant."
@@ -86,7 +91,7 @@ label club_comedie:
     play music comedy
     pov "Alors c'est ici que la magie opère ?"
     show Dieuvomi PoseGauche Badboy at left
-    dieuv "Et ouais, bon fais pas gaffe à l'esthétique bourgeoise, on va bosser là dessus."
+    dieuv "Et ouais, bon fais pas gaffe à l'esthétique bourgeoise, on va bosser là-dessus."
     show Dieuvomi PoseGauche Colere
     dieuv "Apparemment les bidons d'essences c'est interdit dans l'enceinte de l'académie... "
     dieuv "Tu parles, on aurait fait une super déco."
@@ -208,7 +213,10 @@ label club_comedie:
     dieuv "Mais fais gaffe, ta vie pourrait changer suite à ça."
 
     show Foulk PoseGauche Sourire
-    foulk "Hé oui milledieu, c'est normal si ça t'a dérangé, on est toujours engagé ici cong."
+    if sex=="m":
+        foulk "Hé oui milledieu, c'est normal que tu sois dérangé, on est toujours engagés ici cong."
+    else:
+        foulk "Hé oui milledieu, c'est normal que tu sois dérangée, on est toujours engagés ici cong."
     show Foulk PoseGauche Degoute
     foulk "J'espère que t'es pas de droite parce que sinon oulala. Je pense que tu vas changer d'avis."
     show Foulk PoseGauche Sourire Yeuxfermes
@@ -292,9 +300,9 @@ label club_comedie:
     show Foulk PoseGauche Colere
     foulk "Quel guindoule celui là aussi le Médoc hein ? On aurait pu être plus gros que Jimmy Fallon puté."
     show Foulk PoseGauche Gene
-    foulk "Et pis aussi ils s'aimaient bieng avec la dieuve là. C'était bieng ce temps là."
+    foulk "Et pis aussi ils s'aimaient bieng avec la dieuve là. C'était bieng ce temps-là."
     show Foulk PoseGauche Sourire Yeuxfermes
-    foulk "On était comme dans le SNL, attends je vais te montrer le sketche."
+    foulk "On était comme dans le SNL, attends je vais te montrer le sketch."
 
     pov "Tu... l'aimes toujours ?"
     show Dieuvomi BrasCroises Triste
@@ -321,7 +329,7 @@ label club_comedie:
     pov "Tu lui en as jamais parlé ? "
     show Foulk PoseGauche Badboy
     show Dieuvomi PoseDroite Badboy Rougit
-    dieuv "Non, pourquoi faire ? Il était au sommet et j'étais si petit. Je pouvais plus rien faire. Alors j'ai crevé des peuneus."
+    dieuv "Non, pour quoi faire ? Il était au sommet et j'étais si petit. Je pouvais plus rien faire. Alors j'ai crevé des peuneus."
     pov "Mais... quel est le rapport ?"
     show Dieuvomi BrasCroises Badboy
     dieuv "Tu vois pas ? Hm je suis pas sûr que tu aies l'étoffe d'un vrai comique."
@@ -331,7 +339,7 @@ label club_comedie:
     show Foulk BrasCroises Degoute
     foulk "Oué là par contre cong, je te suis plus dieuvomi."
     show Foulk PoseSpeciale Sourire
-    foulk "Faut toujours que tu fasses le comique avec les peuneus alors qu'on pourrait faire les sketchs comme Bo Burnam."
+    foulk "Faut toujours que tu fasses le comique avec les peuneus alors qu'on pourrait faire les sketches comme Bo Burnam."
     show Foulk PoseSpeciale Sourire Yeuxfermes Rougit
     foulk "Ouh oui, lui il est bieng. Il est siiiii bieng. On devrait être comme lui. TOUT LE MONDE. T'y es pas comme Bo Burnam toi, le nouveau là."
     show Foulk PoseSpeciale Sourire Yeuxfermes
@@ -363,7 +371,7 @@ label club_comedie:
 
         
     
-    foulk "ATTENDS T'AS PAS VU LE SKETCHE DU SNL !!"
+    foulk "ATTENDS T'AS PAS VU LE SKETCH DU SNL !!"
     window hide
     pause 0.5
     show SNL zorder 1000 at snl_pos

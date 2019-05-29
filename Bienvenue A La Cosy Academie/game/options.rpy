@@ -26,7 +26,7 @@ define gui.show_name = False
 
 ## La version du jeu.
 
-define config.version = "1.4"
+define config.version = "77.33"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -51,6 +51,7 @@ define build.name = "BienvenueALaCosyAcademie"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
+define config.fade_music = 0.7
 
 define config.default_music_volume = 0.5
 define config.default_sfx_volume  = 0.5
@@ -59,7 +60,7 @@ define config.default_voice_volume  = 0.5
 ## Pour autoriser le joueur à réaliser un test de volume, décommenter la ligne
 ## ci-dessous et utilisez-la pour configurer un son d’exemple.
 
-define config.sample_sound = "sounds/creepy-hifreq-woosh.mp3"
+define config.sample_sound = "sounds/parapet.mp3"
 define config.sample_voice = "sounds/text-sound.mp3"
 
 
@@ -116,7 +117,6 @@ define config.end_game_transition = None
 
 define config.window = "auto"
 
-
 ## Transitions utilisées pour afficher ou cacher la fenêtre de dialogue
 
 define config.window_show_transition = Dissolve(.2)
@@ -137,6 +137,9 @@ default preferences.text_cps = 50
 
 default preferences.afm_time = 15
 
+default preferences.desktop_rollback_side = "disable"
+default preferences.skip_after_choices = False
+default preferences.transitions = 2
 
 ## Répertoire de sauvegarde ####################################################
 ##
@@ -228,4 +231,4 @@ init python:
 ## Le nom d’utilisateur et du projet associé au projet itch.io, séparé par un
 ## slash.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "ze-pilot/bienvenue-a-la-cosy-academie"

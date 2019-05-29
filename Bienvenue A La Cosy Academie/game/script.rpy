@@ -174,6 +174,7 @@ define clornide = Character('Clornide', color="#fff", image="Clornide", screen =
 define samael = Character('Samaël', color="#fff", image="Samael", screen = "say_classic")
 define decade = Character('Decade', color="#fff", image="Decade", screen = "say_classic")
 define cheers = Character('name_cheers', color="#fff", dynamic = True, screen = "say_classic")
+define panse = Character('name_panse', color="#fff", image="Pansepignon", dynamic = True, screen = "say_classic")
 define inc = Character('???', color="#fff", screen = "say_classic")
 define tlm = Character('Tout le monde', color="#fff", screen = "say_classic")
 define noName = Character('', color="#fff", screen = "say_classic")
@@ -215,11 +216,11 @@ define audio.auraDBZ = "sounds/aura_dbz.mp3"
 define audio.auraSeiya = "sounds/aura_seiya.mp3"
 define audio.ATATATATA = "sounds/ATATATATA.mp3"
 define audio.metaltchoum = "sounds/metaltchoum.mp3"
+define audio.jumpscare = "sounds/jumpscare.mp3"
 # Le jeu commence ici
 label start:
-
+    $ quick_menu = False
     menu:
-
         noName "Avant de commencer, voulez-vous incarner un personnage féminin ou masculin ?"
 
         "Féminin.":
@@ -257,9 +258,10 @@ label start:
     $ name_zep = "???"
     $ name_clornide = "Clornide"
     $ name_cheers = "Panthusiasts"
+    $ name_panse = "???"
 
     
-    show screen affection
+    #show screen affection
     python:
         if sex=="m":
             povname = renpy.input("Veuillez renseigner votre prénom ? Par défaut vous serez appelé Hector.", length = 40)
@@ -272,7 +274,7 @@ label start:
                 povname="Hector"
 
         else:
-            povname = renpy.input("Veuillez renseigner votre prénom ? Par défaut vous serez appelé Cassandre.", length = 40)
+            povname = renpy.input("Veuillez renseigner votre prénom. Par défaut vous serez appelé Cassandre.", length = 40)
             povname = povname.strip()
 
             while povname=="moguri" or povname=="Moguri" or povname=="medoc" or povname=="Medoc" :
@@ -282,7 +284,7 @@ label start:
                 povname="Cassandre"
 
     window auto
-    
+    $ quick_menu = True
 
     jump intro
 

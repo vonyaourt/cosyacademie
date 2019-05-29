@@ -88,7 +88,7 @@ label conseil_eleves:
     show Metalice PoseDroite Sourire
     met "Bien sûr, c'est notre pain quotidien même."
     show Metalice PoseDroite Sourire
-    met "La fermeture du club d'archerie suite à un contact tête/flèche, la mise en place de vidéo surveillance autour du parc à vélo pour éviter le creuvage industriel de pneus..."
+    met "La fermeture du club d'archerie suite à un contact tête/flèche, la mise en place de vidéo surveillance autour du parc à vélo pour éviter le crevage industriel de pneus..."
     show Lock PoseGauche Badboy
     lock "On a fait retirer toutes les échelles suite à l'incident de La Chute aussi."
     pov "« L'incident de la chute ? »"
@@ -137,7 +137,7 @@ label conseil_eleves:
     lock "Pas plus tard qu'hier, j'ai croisé un type bizarre au regard louche qui traînait autour des labos de chimie."
     met "Moguri ?"
     lock "Non ! Je l'ai intimé de décliner son identité, mais il a disparu dans un nuage de fumée."
-    met "Ah ! Un petit ? Avec une oeil tourné vers le passé, et l'autre vers l'avenir ?"
+    met "Ah ! Un petit ? Avec un oeil tourné vers le passé, et l'autre vers l'avenir ?"
     lock "Oui ! C'est le bon signalement !"
     met "Plutôt caucasien, la chevelure bouclée ? Portant une tunique ?"
     lock "Tout à fait !"
@@ -146,7 +146,7 @@ label conseil_eleves:
     mic "Alors, il me semble qu'il s'agit du Sire Flamel... C'est un intervenant extérieur ! Il est la pour dispenser des cours de chimie autour du thème ''le THC Philosophal'', un type brillant."
 
     lock "Pourquoi personne ne m'a prévenu ? Où se trouve son formulaire d'inscription ? Comment je peux préserver le calme si on me met des bâtons dans les roues ?"
-    met "Au moins tes roues ont toujours leur peuneus..."
+    met "Au moins tes roues ont toujours leurs peuneus..."
     innerpov "Oh Dieuvomi, mais qu'es-tu devenu ?"
     lock "Tu vois [povname], on a clairement besoin de quelqu'un qui sait remplir les formulaires."
     lock "D'ailleurs, remplis-moi ce petit questionnaire à destination des nouveaux élèves s'il te plaît. Il en va de la sécurité de tout un chacun."
@@ -157,16 +157,16 @@ label conseil_eleves:
     mic "..."
     lock "Faites bien attention."
     met "À quoi ?"
-    lock "Réflechissez-y, vous le saurez. Moi. Je. Sais."
+    lock "Réfléchissez-y, vous le saurez. Moi. Je. Sais."
 
     show Mickey PoseSpeciale Sourire
     mic "Faudrait vraiment que tu penses à mieux suivre mes cours sur les terrasses Lock, ça te calmerait je pense."
     innerpov "Lock est vraiment mignon et chaotique à la fois, c'est... troublant."
         
     met "Tu as vu [povname], le conseil des élèves nécessite une main d'enfer, dans un gant dévolu."
-    met "En plus de la rédaction des formulaires, leur diffusion, leur réception, ainsi que le maintien de l'odre, ou la délation, nous aurions besoin de tes compétences."
+    met "En plus de la rédaction des formulaires, leur diffusion, leur réception, ainsi que le maintien de l'ordre, ou la délation, nous aurions besoin de tes compétences."
 
-    lock "Concernant les délations, l'élève Von Yaourt a encore rempli la banette. Principalement pour des délis mineurs commis par, je cite : ''des personnes aux accents étrange(r)s''. Je donne suite ?"
+    lock "Concernant les délations, l'élève Von Yaourt a encore rempli la banette. Principalement pour des délits mineurs commis par, je cite : ''des personnes aux accents étrange(r)s''. Je donne suite ?"
     met "Comme tu veux Lock, mais fais-le loin."
     met "Alors [povname], je t'inscris au conseil ?"
     menu:
@@ -177,7 +177,7 @@ label conseil_eleves:
             met "Je comprends, j'ai l'habitude de carry tout le monde. Je me rends compte du vertige que donnent les responsabilités du conseil."
         "Bien entendu. Mais pas de facon officielle, je préfère euh... être un agent de l'ombre ?":
             show Metalice PoseDroite Colere Rougit
-            met "Quelle bonne idée ! Alors, ne reste pas là, nous devons resters discrets, special agent [povname] !"
+            met "Quelle bonne idée ! Alors, ne reste pas là, nous devons rester discrets, special agent [povname] !"
 
     jump sad_no_club
     return

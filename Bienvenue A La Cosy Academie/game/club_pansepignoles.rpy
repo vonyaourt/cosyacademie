@@ -81,14 +81,14 @@ label club_pansepignoles:
     show Chuenpodo PoseSpeciale Sourire 
     chuen "Et bien en voilà une bonne question ! C'est en hommage à notre ancien manager Pansepignon... À l'époque j'étais moi même cheerleader !"
     show Chuenpodo PoseSpeciale Sourire Yeuxfermes
-    chuen "C'était un étudiant à la Cosy Académie comme nous, mais il était genial." 
+    chuen "C'était un étudiant à la Cosy Académie comme nous, mais il était génial." 
     show Chuenpodo PoseSpeciale Sourire Yeuxfermes Rougit
     chuen "C'était le meilleur. Et il n'arrêtait pas de dire que c'était moi le meilleur."
     show Cheerleaders at dezoom, go_left_to_right
     pov "Une admiration réciproque on va dire..."
     show Chuenpodo PoseSpeciale Colere Rougit
     chuen "MAIS C'ÉTAIT LUI LE MEILLEUR !"
-
+    innerpov "Tiens... ça me rappelle vaguement quelqu'un..."
     pov "Oui oui bon d'accord... et ensuite ?"
     show Chuenpodo PoseSpeciale Colere Rougit
     chuen "Non mais il faut le garder en tête. C'est lui. Bref, il était tout aussi fascinant qu'il était bavard."
@@ -236,7 +236,7 @@ label club_pansepignoles:
 
     pov "Non, ils sont carrément bizarres... Dis, c'est quoi cette histoire d'invocation ?"
     show Metalice Standard Cligne
-    met "T'as bien vu qu'ils n'arrivent jamais a épeler Pansepignon correctement sans être interrompus ?"
+    met "T'as bien vu qu'ils n'arrivent jamais à épeler Pansepignon correctement sans être interrompus ?"
 
     pov "Oui Chuenpodo m'a même dit qu'ils devaient être maudits !"
     show Metalice Standard Sourire

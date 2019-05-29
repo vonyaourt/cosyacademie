@@ -4,7 +4,7 @@ label fin_journee:
 
     met "Ah te voilà [povname] !"
     met "Tu rentres chez toi ? Dure journée hein !"
-    met "T'inquiète pas, j'ai reglé ton inscription, tout est en ordre !"
+    met "T'inquiète pas, j'ai réglé ton inscription, tout est en ordre !"
     pov "Oh merci à toi !"
     met "J'ai cru comprendre que tu n'avais toujours pas trouvé de club ?"
     pov "Non... Ils sont un peu..."
@@ -20,5 +20,5 @@ label fin_journee:
     hide Metalice with dissolve
     innerpov "Quelle ninja..."
 
-    jump club_lock
+    jump unAutreLendemainMatin
     return

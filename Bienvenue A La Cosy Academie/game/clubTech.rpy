@@ -66,7 +66,7 @@ label club_tech:
     innerpov "Mais n'importe quoi ! Tu cherches le club #tech !"
 
     show Moguri PoseDroite Sourire Yeuxfermes
-    mog "Ok, ok, ça a l'air de te tenir à coeur...Tu as de la chance, je suis justement avec la personne qu'il te faut."
+    mog "Ok, ok, ça a l'air de te tenir à coeur... Tu as de la chance, je suis justement avec la personne qu'il te faut."
     mog "Ze PilOt est notre petit génie de l'informatique à l'Académie ! Il est président du club #tech."
     mog "Ze PilOt, je te présen..."
 
@@ -76,7 +76,7 @@ label club_tech:
 
     show ZePilot Standard Sourire Yeuxfermes    
     zep "Bonjour 192.168.1.77 !"
-    innerpov "Oh... ok...mais qu'est-ce que raconte ce type ?"
+    innerpov "Oh... ok... mais qu'est-ce que raconte ce type ?"
     pov "Bonjour ! Je suis [povname] et je viens d'arriver à l'Académie. C'est un honneur de vous rencontrer !"
     zep "C'est chouette que tu utilises le dernier Sansung, ses capacités d'encodage dynamique sont assez folles ! Tu feras attention, ton firmware a des failles de sécurité bien connues."
     innerpov "Mais comment il sait ça ?"
@@ -99,7 +99,7 @@ label club_tech:
     zep "Mais... non ! Quoi ? Mon historique ? Mais ça n'a absolument rien à voir, ce n'est pas Siri à la pomme, c'est Siri la généreuse suédoise !"
     zep "Et comment... Oui bin j'étais intraçable en navigation privée !"
 
-    mog "Ouh, ça devient génant ! File [povname],  tu n'as qu'à suivre les panneaux #tech, c'est relativement indiqué."
+    mog "Ouh, ça devient gênant ! File [povname],  tu n'as qu'à suivre les panneaux #tech, c'est relativement indiqué."
     if sex=="f":
         pov "Merci ! Je vous laisse ! Désolée de vous avoir interrompus... Et bon courage avec Jarod..."
     else:
@@ -110,7 +110,7 @@ label club_tech:
     jump club_otaku
     return
 
-    
+  
 
 label .Clubtechmetalice:
     innerpov "Mais où se trouve ce club #tech ? C'est un vrai dédale cette Académie..."
@@ -126,7 +126,7 @@ label .Clubtechmetalice:
     else:
         pov "Oh ! Metalice ! C'est toi ! Tu m'as... surpris. J'avais... la tête en l'air."
     
-    met "Pardonne-moi ! Je ne voulais pas te faire sursauter. J'ai tellement l'habitude de carry que j'ai développé un sens hyperdeveloppé de la discrétion."
+    met "Pardonne-moi ! Je ne voulais pas te faire sursauter. J'ai tellement l'habitude de carry que j'ai développé un sens hyperdéveloppé de la discrétion."
     innerpov "De la discré... Oh my... Je ne m'attendais pas à cet éternuement !"
     
     show Metalice PoseSpeciale Gene
@@ -137,7 +137,7 @@ label .Clubtechmetalice:
 
     pov "Je ne l'ai pas vu, désolé."
     met "Mais, qu'est-ce que tu fais dans ces couloirs au fait ?"
-    pov "Je cherche le club #tech. J'ai croisé Ze PilOt qui m'a indiqué que des photocopieuses sont là bas."
+    pov "Je cherche le club #tech. J'ai croisé Ze PilOt qui m'a indiqué que des photocopieuses sont là-bas."
     met "Oui, tu devrais trouver facilement !"
 
     show Metalice PoseGauche Degoute
@@ -173,13 +173,16 @@ label .Clubtechfoulk:
     innerpov "Pourquoi il me met tellement mal à l'aise ?"
 
     show Foulk PoseDroite Sourire Yeuxfermes
-    foulk "J'déconne Cong ! Tu trouveras le club tech en prenant à gauche au prochain couloir. Et surtout, passe voir mon spectacle !"
+    foulk "J'déconne Cong ! Tu trouveras le club #tech en prenant à gauche au prochain couloir. Et surtout, passe voir mon spectacle !"
     hide Foulk with dissolve
     innerpov "Un spectacle !? Mais je l'ai déjà vu ! Soit il y a un problème temporel, soit ils ont un AUTRE spectacle..."
     innerpov "Ces deux perspectives m'angoissent..."
 
+    show Foulk PoseGauche Sourire with dissolve
+    foulk "J'oubliais !"
     show Foulk BrasCroises Triste
-    foulk "Ah, et si tu croises un type de mauvais goût, à la cravate et aux chaussettes bleues, n'écoute pas ses indications : à part la droite, il ne connaît rien d'autre."
+    foulk "Si tu croises un type de mauvais goût, à la cravate et aux chaussettes bleues, n'écoute pas ses indications : à part la droite, il ne connaît rien d'autre."
+    show Foulk PoseSpeciale Sourire
     foulk "Eh beh, appelez moi Joseph Gordon Levitt'riole aujourd'hui ! Il faut que je la note celle-là, elle est trop fraiche !"
     pov "Ok ! Salut hein !"
     innerpov "Rho le lourd..."
@@ -189,36 +192,47 @@ label .Clubtechfoulk:
 
 
 label .Clubtechcheerleaders:
-
+    play music haunted
     innerpov "Mais quel est ce bruit ?"
     noName "..."
     innerpov "On dirait des prières..."
     innerpov "Ça vient de derrière cette porte."
 
     noName "Ne regarde pas en arrière, nous sommes là pour rester \n la vie que nous avons connue, viendra un jour,"
-    scene school hallway choice creepy with longfade
+
+    window hide
+    scene black with fade
+    play sound jumpscare
+    show jumpscare with hpunch
+    pause 4.0
+    hide jumpscare
+    scene school hallway choice creepy
     show Cheerleaders Groupe Drop 
+    window auto
+
+    innerpov "OH MERDE J'AI EU PEUR !"
     innerpov "Encore eux ? Ces cheerleaders sont vraiment étranges ! Qu'est-ce qu'ils font ? "
-    clornide Clornide Drop "On y est, à la limite, là où le futur (pas compris) \nle feu brûlera, et ne mourra jamais..."
+    clornide Clornide Drop "On y est, à la limite, là où le futur nous laisse en arrière,\nle feu brûlera, et ne mourra jamais..."
     samael Samael Drop "Ô grand Pansepignon, nous invoquons ton nom !"
-    clornide "Regarde dans les yeux d'une nouvelle vie\n alors trouve-moi, juste, trouve-moi..."
+    clornide "Regarde dans les yeux d'une nouvelle vie,\nalors trouve-moi, juste, trouve-moi..."
     samael "Ô Grand Pansepignon, Bénis-Nous de ta Présence, et Accepte ces Offrandes !"
     innerpov "Ils font flipper ces types !"
-    clornide "Des étincelles voleront\n si nous crions non..."
+    clornide "Des étincelles voleront,\nsi nous crions maintenant..."
     samael "Ô Grand Pansepignon, nous nous inclinons devant ton Drop !"
-    clornide "Ce n'est pas comme ça que nous partirons \n nous sommes ceux qui ne lâchons jamais !!"
-    clornide "(pas compris)\n Nous ne grandirons jamaiiiis !!!"
+    clornide "Ce n'est pas comme ça que nous partirons,\nnous sommes ceux qui ne lâchent jamais !!"
+    clornide "Il suffit de te regarder tourbillonner là où personne ne sait.\nNous ne grandirons jamaiiiis !!!"
     if sex=="f":
-        innerpov "Ils se partagent des pillules bizarres... Le Drop ! Metalice m'avait prévenue !"
+        innerpov "Ils se partagent des pilules bizarres... Le Drop ! Metalice m'avait prévenue !"
     else:
-        innerpov "Ils se partagent des pillules bizarres... Le Drop ! Metalice m'avait prévenu !"
+        innerpov "Ils se partagent des pilules bizarres... Le Drop ! Metalice m'avait prévenu !"
     
     clornide "Mais qui est là ? KONTAK !"
     if sex=="f":
-        innerpov "Je suis reperée ! Vite le couloir !"
+        innerpov "Je suis repérée ! Vite le couloir !"
     else:
-        innerpov "Je suis reperé ! Vite le couloir !"
+        innerpov "Je suis repéré ! Vite le couloir !"
 
+    play music rainbow
     return
 
 
@@ -252,11 +266,11 @@ label .Clubtechdin:
         din    "Je t'aurais bien accompagné, mais ça va être l'heure de l'entraînement des cheerleaders, et j'en profite pour travailler des poses anatomiques réalistes."
 
     
-    pov    "Ta pugnacité t'honore Din ! Tu seras une super artiste !"
+    pov    "Ta pugnacité t'honore din ! Tu seras une super artiste !"
 
     show din PoseSpeciale Perv
-    din    "Oh, l'important c'est de prendre du plaisir en ce que tu fais ! Et les corps tendus et en sueur des cheerleaders sont une source d'inspiration sans fin... mais c'est TOI qui es supair !"
-    din    "Je file, je ne veux pas en râter une miette ! À très vite [povname] !"
+    din    "Oh, l'important c'est de prendre du plaisir à ce que tu fais ! Et les corps tendus, en sueur, des cheerleaders sont une source d'inspiration sans fin... mais c'est TOI qui es supair !"
+    din    "Je file, je ne veux pas en rater une miette ! À très vite [povname] !"
 
     return
 
@@ -292,9 +306,9 @@ label .ChooseCouloir(count_couloir = 0):
 
     $ line_choice = "ERROR !!!"
     if count_couloir == 5:
-        $ line_choice = "Ils auraient quand même pu faire un peu d'efforts sur ces décors, ça se voit le color swap.."
+        $ line_choice = "Ils auraient quand même pu faire un effort sur ces décors, ça se voit le color swap.."
     elif count_couloir == 2:
-        $ line_choice = "J'espère que ce n'est pas réellement un labyrinthe !"
+        $ line_choice = "J'espère que ce n'est pas réellement un labyrinthe ! Je devrais peut-être prendre des notes au cas où ?"
     elif count_couloir == 7:
         $ line_choice = "Plus le temps passe, et plus la droite me tente..."
     elif count_couloir == 8:
@@ -311,7 +325,7 @@ label .ChooseCouloir(count_couloir = 0):
         elif randomnum == 4:
             $ line_choice = "J'aurais du m'acheter un mac."
         elif randomnum == 5:
-            $ line_choice = "Gauche droite, c'est pareil au final non ?"
+            $ line_choice = "Gauche, droite, c'est pareil au final non ?"
 
     
     innerpov "[line_choice]"
@@ -373,7 +387,7 @@ label .ChooseCouloir(count_couloir = 0):
         elif last_choice == 1:
             innerpov "C'est lugubre par ici..."
         else:
-            innerpov "Quelque chose d'inhumain/de diabolique se dégage de ces murs..."
+            innerpov "Quelque chose d'inhumain, de diabolique, se dégage de ces murs..."
 
         call .Clubtechcheerleaders from _call_club_tech_Clubtechcheerleaders
 
@@ -386,7 +400,7 @@ label .ChooseCouloir(count_couloir = 0):
         elif last_choice == 1:
             innerpov "Ça sent le matcha et les crayons de couleurs. J'espère que c'est le club #tech !"
         else:
-            innerpov "Ça sent le thé et les petits gateaux... J'espère que c'est le club #tech !"
+            innerpov "Ça sent le thé et les petits gâteaux... J'espère que c'est le club #tech !"
         call .Clubtechdin from _call_club_tech_Clubtechdin
         return
 

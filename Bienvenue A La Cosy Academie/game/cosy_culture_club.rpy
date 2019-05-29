@@ -184,7 +184,7 @@ label cosy_culture_club:
     show Medoc BrasCroises Degoute
     med "Comme si on avait besoin d'une excuse pour faire la fête..."
     show Medoc PoseDroite Sourire
-    mog "Ouais enfin bon soit, on doit rendre des comptes, donc on doit enregister !"
+    mog "Ouais enfin bon soit, on doit rendre des comptes, donc on doit enregistrer !"
 
     innerpov "Faire une \"tape\" avec Medoc et Moguri.. Ouah !"
 
@@ -202,7 +202,7 @@ label cosy_culture_club:
         med "Hé hé calme-toi meuf, c'est la cosy académie ici, c'est normal !"
     
     mog "Allez, assieds-toi confortablement, tu vas nous regarder jouer à un jeu aujourd'hui..."
-    med "En buvant des verres bien sûr.. Quel serait le jeu idéal pour ça ?"
+    med "En buvant des verres bien sûr... Quel serait le jeu idéal pour ça ?"
     menu:
         med "{cps=0}En buvant des verres bien sûr... Quel serait le jeu idéal pour ça ?{/cps}"
         "Cul à cul sec !":

@@ -208,7 +208,7 @@
 
     mic "Malheureusement je crois que vu l'écart des scores, il va falloir qu'on se mette à tricher aussi…"
 
-   if sex=="m":
+    if sex=="m":
         pov "Quoi ? Mais je suis le pire menteur que je connaisse ! On va jamais y arriver !"
     else:
         pov "Quoi ? Mais je suis la pire menteuse que je connaisse ! On va jamais y arriver !" 
@@ -380,7 +380,7 @@
 
     mat "Arf… Je m'en doutais bien ! Mais bon, si jamais tu veux te faire une petite partie juste comme ça, n'hésite pas à passer !  La porte sera toujours ouverte !"
 
-    pov "J'hesiterai un peu quand même... Bonne soirée Mathilde !"
+    pov "J'hésiterai un peu quand même... Bonne soirée Mathilde !"
 
     show Mathilde PoseGauche Sourire
     mat "Et en parlant de Von... Tu peux toujours essayer son club de randonnée ! Ils partent demain matin !"
