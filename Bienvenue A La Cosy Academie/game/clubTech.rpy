@@ -92,14 +92,14 @@ label club_tech:
     pov "Non, je suis [povname]."
 
     show Moguri PoseGauche Sourire Rougit
-    mog "Haha, non, Ze PilOt a développé un assistant personnel qui s'appelle Jarod... en référence à la Guerre des étoiles, je crois... Ils sont connectés en permanence, mais il y a encore quelques réglages à faire."
+    mog "Haha, non, Ze PilOt a developpé un assistant personnel qui s'appelle Jarod... en référence à la Guerre des étoiles, je crois... Ils sont connectés en permanence, mais il y a encore quelques réglages à faire."
 
     show ZePilot Standard Colere Rougit
     zep "Mais arrête Jarod, puisque je te dis que non, je ne connais pas cette Siri !"
     zep "Mais... non ! Quoi ? Mon historique ? Mais ça n'a absolument rien à voir, ce n'est pas Siri à la pomme, c'est Siri la généreuse suédoise !"
     zep "Et comment... Oui bin j'étais intraçable en navigation privée !"
 
-    mog "Ouh, ça devient génant ! File [povname],  tu n'as qu'à suivre les panneaux #tech, c'est relativement indiqué."
+    mog "Ouh, ça devient gênant ! File [povname],  tu n'as qu'à suivre les panneaux #tech, c'est relativement indiqué."
     if sex=="f":
         pov "Merci ! Je vous laisse ! Désolée de vous avoir interrompus... Et bon courage avec Jarod..."
     else:
@@ -266,7 +266,7 @@ label .Clubtechdin:
         din    "Je t'aurais bien accompagné, mais ça va être l'heure de l'entraînement des cheerleaders, et j'en profite pour travailler des poses anatomiques réalistes."
 
     
-    pov    "Ta pugnacité t'honore Din ! Tu seras une super artiste !"
+    pov    "Ta pugnacité t'honore din ! Tu seras une super artiste !"
 
     show din PoseSpeciale Perv
     din    "Oh, l'important c'est de prendre du plaisir à ce que tu fais ! Et les corps tendus, en sueur, des cheerleaders sont une source d'inspiration sans fin... mais c'est TOI qui es supair !"
