@@ -133,7 +133,7 @@ label .Clubtechmetalice:
     met "Je t'avoue que ça m'aide beaucoup pour attraper mon coup de vent de petit ami !"
 
     show Metalice BrasCroises Sourire
-    met "D'ailleurs, tu ne l'aurais pas vu par hasard ? Je le cherche... Il doit encore trainer au Respawn Point, le café où se retrouvent les joueurs de sa trempe."
+    met "D'ailleurs, tu ne l'aurais pas vu par hasard ? Je le cherche... Il doit encore traîner au Respawn Point, le café où se retrouvent les joueurs de sa trempe."
 
     pov "Je ne l'ai pas vu, désolé."
     met "Mais, qu'est-ce que tu fais dans ces couloirs au fait ?"
@@ -183,7 +183,7 @@ label .Clubtechfoulk:
     show Foulk BrasCroises Triste
     foulk "Si tu croises un type de mauvais goût, à la cravate et aux chaussettes bleues, n'écoute pas ses indications : à part la droite, il ne connaît rien d'autre."
     show Foulk PoseSpeciale Sourire
-    foulk "Eh beh, appelez moi Joseph Gordon Levitt'riole aujourd'hui ! Il faut que je la note celle-là, elle est trop fraiche !"
+    foulk "Eh beh, appelez moi Joseph Gordon Levitt'riole aujourd'hui ! Il faut que je la note celle-là, elle est trop fraîche !"
     pov "Ok ! Salut hein !"
     innerpov "Rho le lourd..."
 
